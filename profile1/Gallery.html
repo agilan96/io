@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Profile Site | Welcome</title>
+    <link rel="stylesheet" href="slideshow.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <header>
+                <div class="container">
+                 
+                    <div id="branding">
+                     <h1>My Profile</h1>
+                 </div>     
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutme.html">About</a></li>
+                        <li><a href="interests.html">Interests</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="Get in Touch.html">Get in touch</a></li>
+                    </ul>
+                </nav>
+                 </div>
+            </header>
+            
+        <div class="galleryy">
+            <section id="slideshow">
+
+                <div class="mySlides fade">
+                  <img src="gal2.jpg" style="width:100%">
+                </div>
+              
+                <div class="mySlides fade">
+                  <img src="INDEX BCG.jpg" style="width:100%">
+                </div>
+              
+                <div class="mySlides fade">
+                  <img src="gal3.jpg" style="width:100%">
+                </div>
+              </section>
+          </div>
+                
+              <script>
+                   var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+                </script>
+</body>
+
+</html>
